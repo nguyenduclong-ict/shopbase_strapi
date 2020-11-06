@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "typeAcquisition": {
+    "include": ["./typings/**/*"]
+  },
+  "compileOnSave": true,
+  "exclude": ["node_modules/*", "build/*", ".cache/*", "exports/*", "public/*"]
+}

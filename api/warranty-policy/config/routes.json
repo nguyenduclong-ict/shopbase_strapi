@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/warranty-policies",
+      "handler": "warranty-policy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/warranty-policies/count",
+      "handler": "warranty-policy.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/warranty-policies/:id",
+      "handler": "warranty-policy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/warranty-policies",
+      "handler": "warranty-policy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/warranty-policies/:id",
+      "handler": "warranty-policy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/warranty-policies/:id",
+      "handler": "warranty-policy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

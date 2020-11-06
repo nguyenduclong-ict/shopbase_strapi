@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-warehouses",
+      "handler": "product-warehouse.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-warehouses/count",
+      "handler": "product-warehouse.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-warehouses/:id",
+      "handler": "product-warehouse.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-warehouses",
+      "handler": "product-warehouse.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-warehouses/:id",
+      "handler": "product-warehouse.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-warehouses/:id",
+      "handler": "product-warehouse.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

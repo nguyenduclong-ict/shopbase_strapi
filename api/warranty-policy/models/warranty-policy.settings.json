@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "warranty_policies",
+  "info": {
+    "name": "WarrantyPolicy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "shop": {
+      "model": "shop"
+    },
+    "description": {
+      "type": "string"
+    },
+    "period": {
+      "type": "integer"
+    },
+    "periodUnit": {
+      "type": "enumeration",
+      "enum": [
+        "day",
+        "month",
+        "year"
+      ],
+      "default": "day"
+    }
+  }
+}

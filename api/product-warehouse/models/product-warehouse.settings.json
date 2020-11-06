@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_warehouses",
+  "info": {
+    "name": "ProductWarehouse"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "shop": {
+      "model": "shop"
+    },
+    "warehouse": {
+      "model": "warehouse"
+    },
+    "product": {
+      "model": "product"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "totalCanSell": {
+      "type": "integer",
+      "default": 0
+    },
+    "cost": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

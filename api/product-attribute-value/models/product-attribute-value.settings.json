@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_attribute_values",
+  "info": {
+    "name": "ProductAttributeValue",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "shop": {
+      "model": "shop"
+    },
+    "product": {
+      "model": "product"
+    },
+    "product_attribute": {
+      "model": "product-attribute"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

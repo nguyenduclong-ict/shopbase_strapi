@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "provinceCode": {
+      "type": "string"
+    },
+    "districtCode": {
+      "type": "string"
+    },
+    "wardCode": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "shop": {
+      "model": "shop"
+    },
+    "isPrimary": {
+      "type": "boolean",
+      "default": false
+    },
+    "full": {
+      "type": "string"
+    }
+  }
+}

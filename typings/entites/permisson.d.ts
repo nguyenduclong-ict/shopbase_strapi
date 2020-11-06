@@ -1,0 +1,3 @@
+interface IPermission {
+  name: string;
+}

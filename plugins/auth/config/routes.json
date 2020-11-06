@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/facebook/login",
+      "handler": "auth.facebook",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
