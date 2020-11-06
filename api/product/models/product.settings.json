@@ -38,7 +38,7 @@
       "type": "integer",
       "default": 0
     },
-    "totalCanSell": {
+    "stock": {
       "type": "integer",
       "default": 0
     },
@@ -48,10 +48,7 @@
     },
     "saleType": {
       "type": "enumeration",
-      "enum": [
-        "percent",
-        "immediate"
-      ]
+      "enum": ["percentage", "absolute"]
     },
     "saleValue": {
       "type": "biginteger",
@@ -67,9 +64,7 @@
     "images": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "plugin": "upload",
       "required": false
     },
@@ -81,10 +76,7 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "many",
-        "one"
-      ]
+      "enum": ["many", "one"]
     }
   }
 }
